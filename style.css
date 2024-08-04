@@ -9,6 +9,7 @@
     --light-text: rgba(216, 222, 233, 1.00);
     --text-font: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     --heading-font: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
+    --box-shadow: 8px 8px 0px 0px rgba(136, 192, 208, 0.25);
 }
 
 body,
@@ -33,7 +34,7 @@ hr {
     background-color: var(--intro-bg);
     color: var(--light-text);
     padding: 25px 10%;
-    box-shadow: var(--highlight-text-light) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: var(--box-shadow);
 }
 
 h1,
@@ -50,7 +51,6 @@ h3 {
 
 .recipe-part img {
     height: 250px;
-    box-shadow: 1px 1px 5px var(--intro-bg);
 }
 
 .recipe-part>h2,
@@ -64,7 +64,7 @@ h3 {
 
 .recipe-part {
     padding: 5% 10px;
-    box-shadow: var(--highlight-text-light) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: var(--box-shadow);
 }
 
 .recipe-part:nth-child(odd) {
