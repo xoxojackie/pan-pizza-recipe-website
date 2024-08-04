@@ -47,19 +47,18 @@ h3 {
     text-align: center;
 }
 
+.recipe-part>h2 {
+    margin: 0;
+}
+
 .recipe-part {
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 0;
-    margin-top: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .recipe-part:nth-child(odd) {
     background-color: var(--dark-bg);
-}
-
-.recipe-part {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .ingredients,
