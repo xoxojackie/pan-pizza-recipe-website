@@ -82,3 +82,11 @@ h3 {
     flex-direction: row-reverse;
     gap: 50px
 }
+
+.footer {
+    background-color: var(--intro-bg);
+    padding: 10px 100px;
+    text-align: center;
+    color: var(--highlight-text-light);
+    font-family: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
+}
