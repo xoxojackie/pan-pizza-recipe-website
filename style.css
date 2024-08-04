@@ -20,11 +20,18 @@ body {
     background-color: var(--light-bg);
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--dark-bg), var(--highlight-text-light), var(--dark-bg));
+    width: 25%;
+}
+
 .intro {
     background-color: var(--intro-bg);
     color: var(--light-text);
     padding: 25px 10%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: var(--highlight-text-light) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 h1,
@@ -41,6 +48,7 @@ h3 {
 
 .recipe-part img {
     height: 250px;
+    box-shadow: 1px 1px 5px var(--intro-bg);
 }
 
 .recipe-part>h2,
@@ -55,7 +63,7 @@ h3 {
 .recipe-part {
     padding-left: 5%;
     padding-right: 5%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: var(--highlight-text-light) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .recipe-part:nth-child(odd) {
