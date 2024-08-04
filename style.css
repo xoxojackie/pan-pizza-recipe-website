@@ -87,10 +87,11 @@ h3 {
 
 .footer {
     background-color: var(--intro-bg);
-    padding: 10px 100px;
+    padding: 25px;
     text-align: center;
     color: var(--highlight-text-light);
     font-family: var(--heading-font);
+    font-size: .9em;
 }
 
 sup {
