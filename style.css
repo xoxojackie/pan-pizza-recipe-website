@@ -1,8 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --intro-bg: rgba(59, 66, 82, 1.00);
+    --dark-bg: rgba(216, 222, 233, 1.00);
+    --light-bg: rgba(236, 239, 244, 1.00);
+    --highlight-text-light: rgba(136, 192, 208, 1.00);
+    --light-text: rgba(216, 222, 233, 1.00);
+}
+
+body,
+html {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    background-color: var(--light-bg);
+}
+
+.intro {
+    background-color: var(--intro-bg);
+    color: var(--light-text);
+    padding: 25px 10%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro>h1 {
+    color: var(--highlight-text-light);
+    text-align: center;
+    font-size: 2.1em;
+}
+
 .recipe-part img {
-    width: 25%;
+    height: 250px;
+}
+
+.recipe-part>h2,
+.recipe-part>p {
+    text-align: center;
+}
+
+.recipe-part {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.recipe-part:nth-child(odd) {
+    background-color: var(--dark-bg);
+}
+
+.recipe-part {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .ingredients,
 .prep {
     display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.prep {
+    flex-direction: row-reverse;
+    gap: 50px
 }
