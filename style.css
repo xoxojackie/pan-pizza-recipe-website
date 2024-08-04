@@ -7,6 +7,8 @@
     --light-bg: rgba(236, 239, 244, 1.00);
     --highlight-text-light: rgba(136, 192, 208, 1.00);
     --light-text: rgba(216, 222, 233, 1.00);
+    --text-font: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    --heading-font: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body,
@@ -15,7 +17,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--text-font);
     font-size: 1.1em;
     background-color: var(--light-bg);
 }
@@ -37,7 +39,7 @@ hr {
 h1,
 h2,
 h3 {
-    font-family: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--heading-font);
 }
 
 .intro>h1 {
@@ -73,13 +75,14 @@ h3 {
 .prep {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
+    gap: 100px;
 }
 
 .prep {
     flex-direction: row-reverse;
-    gap: 50px
 }
 
 .footer {
@@ -87,9 +90,13 @@ h3 {
     padding: 10px 100px;
     text-align: center;
     color: var(--highlight-text-light);
-    font-family: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--heading-font);
 }
 
 sup {
     font-size: .7em;
+}
+
+.ingredients ul {
+    list-style-type: ">  ";
 }
