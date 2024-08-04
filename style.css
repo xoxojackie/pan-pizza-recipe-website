@@ -1,3 +1,8 @@
 .recipe-part img {
     width: 25%;
 }
+
+.ingredients,
+.prep {
+    display: flex;
+}
