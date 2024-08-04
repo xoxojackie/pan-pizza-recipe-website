@@ -89,3 +89,7 @@ h3 {
     color: var(--highlight-text-light);
     font-family: 'Titillium Web', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+sup {
+    font-size: .7em;
+}
